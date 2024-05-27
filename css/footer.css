@@ -28,9 +28,11 @@
 }
 
 .developer {
-	font-size: 12px;
-	line-height: 1.4;
 	margin: 0 auto;
+
+	font-size: 12px;
+	line-height: 1.2;
+	transform: translateX(-2px);
 }
 
 .developer--mobile {
@@ -45,8 +47,13 @@
 
 
 @media (max-width: 1100px) {
+	.footer {
+		padding: 37px 0 49px;
+	}
+
 	.developer {
 		color: #9798a5;
+		transform: translateX(-13px);
 	}
 }
 
@@ -70,6 +77,7 @@
 		padding: 15px 0;
 		margin: 0 auto;
 		text-align: center;
+		transform: none;
 	}
 
 

@@ -2,7 +2,7 @@
 	text-align: center;
 	color: rgb(56, 58, 76);
 
-	padding: 70px 0;
+	padding: 70px 0 71px;
 }
 
 .container {}
@@ -12,7 +12,7 @@
 	font-weight: 700;
 
 
-	margin-bottom: 25px;
+	margin-bottom: 27px;
 }
 
 .about__subtitle {
@@ -24,7 +24,7 @@
 	line-height: 26px;
 	justify-content: center;
 
-	margin-bottom: 35px;
+	margin-bottom: 34px;
 }
 
 .about__subtitle::before,
@@ -42,13 +42,14 @@
 	line-height: 1.4;
 
 	max-width: 724px;
-	margin: 0 auto 50px;
+	margin: 0 auto 58px;
 }
 
 .about__advantages {
 	display: flex;
 	gap: 10px;
 	justify-content: space-between;
+	max-width: 922px;
 
 	margin: 0 auto;
 
@@ -61,8 +62,6 @@
 	align-items: center;
 	row-gap: 16px;
 	flex-basis: 183px;
-	/* max-width: 183px; */
-	max-height: 182px;
 	line-height: 1.4;
 }
 
@@ -73,7 +72,7 @@
 	width: 122px;
 	height: 122px;
 	border-radius: 100%;
-	line-height: 1;
+	line-height: 1.2;
 	background-color: #23C7EC;
 	counter-increment: advantages;
 	content: counter(advantages);
@@ -87,14 +86,19 @@
 }
 
 @media (max-width: 1100px) {
-	.section-title {
+	.about {
+		padding-bottom: 72px;
+	}
+
+
+	.about__title {
 		font-size: 32px;
-		margin-bottom: 23px;
+		margin-bottom: 24px;
 	}
 
 	.about__subtitle {
 		font-size: 20px;
-		margin-bottom: 33px;
+		margin-bottom: 30px;
 	}
 
 	.about__subtitle::before,
@@ -103,11 +107,20 @@
 	}
 
 	.about__text {
+		max-width: 666px;
 		font-size: 16px;
+		margin-bottom: 59px;
+	}
+
+	.about__advantages {
+		justify-content: space-around;
+		max-width: 909px;
+		min-height: 180px;
 	}
 
 	.about__card {
 		font-size: 18px;
+		justify-content: space-between;
 	}
 
 	.about__card::before {
@@ -122,7 +135,7 @@
 
 @media (max-width:752px) {
 	.about {
-		padding: 30px 0 60px;
+		padding: 30px 0 64px;
 	}
 
 	.about__advantages {
@@ -144,9 +157,9 @@
 	}
 
 	.about__subtitle {
-		gap: 22px;
+		gap: 27px;
 		font-size: 16px;
-		margin-bottom: 26px;
+		margin-bottom: 25px;
 	}
 
 	.about__subtitle::before,
@@ -161,7 +174,6 @@
 	}
 
 	.about__advantages {
-		height: 182px;
 		counter-reset: advantages 0;
 	}
 
@@ -199,12 +211,12 @@
 		width: 104px;
 		height: 104px;
 		border-radius: 100%;
-		line-height: 1;
+		line-height: 1.2;
 		background-color: #23C7EC;
 		counter-increment: advantages;
 		content: counter(advantages);
 
-		font-size: 57px;
+		font-size: 53px;
 	}
 
 	.about__card.active {
@@ -235,12 +247,12 @@
 		transition: background-color 0.25s ease-in;
 	}
 
-	.slider-wrapper button:hover{
+	.slider-wrapper button:hover {
 		background-color: #ececec88;
 	}
 
 	.slider-wrapper button:focus,
-	.slider-wrapper button:active{
+	.slider-wrapper button:active {
 
 		background-color: #aeb0c1;
 		outline: none;

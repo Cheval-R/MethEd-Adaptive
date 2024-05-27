@@ -24,7 +24,8 @@
 .callback {
 	display: flex;
 	flex-direction: column;
-	column-gap: 3px;
+	row-gap: 5px;
+	transform: translateX(-2px);
 	align-items: center;
 
 	font-size: 24px;
@@ -79,15 +80,16 @@
 
 @media (max-width: 1100px) {
 	.header {
-		padding: 26px 0 70px;
+		padding: 26px 0 69px;
 
 		background-image:
 			linear-gradient(to top, #2F324BD9, #2F324BD9),
 			url("./../img/header/header-bg-1024.jpg");
+
 	}
 
 	.header__links {
-		margin-bottom: 70px;
+		margin-bottom: 71px;
 	}
 
 	.logo {
@@ -105,27 +107,30 @@
 	}
 
 	.header__title {
+		max-width: 790px;
+		margin: 0 auto 30px;
 		font-size: 40px;
-
-		margin-bottom: 28px;
 	}
 
 	.header__desc {
+		max-width: 754px;
 		font-size: 18px;
-		margin-bottom: 60px;
+		margin: 0 auto 55px;
 	}
 
 	.button {
-		padding: 11px 49px;
+		padding: 13px 49px;
 	}
 }
 
 
 @media(max-width: 700px) {
+
 	.callback__number,
 	.callback__recall {
 		display: none;
 	}
+
 	.callback::before {
 		content: "";
 		display: block;
@@ -140,6 +145,7 @@
 }
 
 @media(max-width: 600px) {
+
 	.header__title {
 		font-size: 25px;
 	}
@@ -155,10 +161,8 @@
 }
 
 @media(max-width: 400px) {
-
-
 	.header {
-		padding: 15px 0 65px;
+		padding: 15px 0 64px;
 	}
 
 	.logo__link {
@@ -176,9 +180,13 @@
 		height: 24px;
 	}
 
+	.header__links {
+		margin-bottom: 66px;
+	}
+
 	.header__title {
 		font-size: 20px;
-		margin-bottom: 23px;
+		margin-bottom: 27px;
 	}
 
 	.header__desc {
@@ -191,11 +199,11 @@
 		color: #ffffffbf;
 		line-height: 1.4;
 
-		margin-bottom: 54px;
+		margin-bottom: 53px;
 	}
 
 	.button {
 		font-size: 16px;
-		padding: 9px 29px;
+		padding: 10px 38px;
 	}
 }
