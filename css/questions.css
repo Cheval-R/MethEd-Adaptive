@@ -1,0 +1,136 @@
+.questions {
+	padding: 70px 0;
+	color: #fff;
+	text-align: center;
+	background-image:
+		linear-gradient(to top, #2F324BD9, #2F324BD9),
+		url("./../img/questions/questions-bg.jpg");
+	background-color: #2F324BD9;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.questions__title {
+	font-size: 35px;
+	font-weight: 700;
+	margin-bottom: 17px;
+}
+
+.questions__subtitle {
+	color: #ffffffcc;
+	font-size: 22px;
+	margin-bottom: 50px;
+}
+
+.recall-form {}
+
+.recall-form__wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	row-gap: 21px;
+	flex-wrap: wrap;
+	max-width: 423px;
+	margin: 0 auto 50px;
+	border: none;
+}
+
+.recall-form__input {
+	border: 1.38px solid rgb(255, 255, 255);
+	border-radius: 50px;
+	flex-basis: 44px;
+	padding: 9px 25px;
+	background-color: #00000000;
+	color: rgba(255, 255, 255, 0.75);
+}
+
+.recall-form__input::placeholder {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.button {}
+
+.button--questions {
+	color: #fff;
+	padding: 11px 38px;
+	margin-bottom: 50px;
+}
+
+.questions__agreement {
+	font-weight: 400;
+}
+
+.spotlight {
+	color: #4A76A8;
+	text-decoration-line: underline;
+}
+
+@media (max-width:1100px) {
+	.questions {
+		background-image:
+			linear-gradient(to top, #2F324BD9, #2F324BD9),
+			url("./../img/questions/questions-bg-1100.jpg");
+		padding-bottom: 56px;
+	}
+
+	.questions__title {
+		font-size: 32px;
+		margin-bottom: 16px;
+	}
+
+	.questions__subtitle {
+		font-size: 20px;
+	}
+
+	.recall-form__wrapper {
+		max-width: 377px;
+	}
+
+	.recall-form__input {
+		font-size: 20px;
+		flex-basis: 39px;
+		padding: 6px 23px;
+	}
+
+	.questions__agreement {
+		font-size: 17px;
+	}
+}
+
+@media (max-width:600px) {
+	.questions {
+		padding: 30px 0;
+	}
+
+	.questions__title {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+
+	.questions__subtitle {
+		font-size: 12px;
+		margin-bottom: 35px;
+	}
+
+	.recall-form__wrapper {
+		max-width: 290px;
+		row-gap: 15px;
+		margin-bottom: 45px;
+	}
+
+	.recall-form__input {
+		flex-basis: 28px;
+		font-size: 14px;
+		padding: 6px 18px;
+	}
+
+	.button--questions {
+		margin-bottom: 30px;
+	}
+
+	.questions__agreement {
+		font-size: 11px;
+	}
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Адаптив - практика</title>
+
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__links">
+				<div class="logo">
+					<a class="logo__link" href="#!">
+						<img class="logo__img" src="./img/header/logo.png" alt="Логотип компании Logo">
+					</a>
+				</div>
+
+				<div class="callback">
+					<a class="callback__number" href="tel:+79625561234">+7 (962) 556 - 1234</a>
+
+					<button class="callback__recall">Перезвоните мне</button>
+				</div>
+			</div>
+
+			<div class="header__content">
+				<h1 class="header__title">Заголовок c&nbsp;уникальным торговым предложение по&nbsp;системе&nbsp;4U</h1>
+
+				<p class="header__desc">Описания предлжения компании. Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на&nbsp;русском языке, а&nbsp;начинающему.</p>
+				<p class="header__desc--mobile">Описания предлжения компании. Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более.</p>
+				<a class="button" href="#!">Подробнее</a>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+		<section class="about">
+			<div class="container">
+				<h2 class="about__title">Уникальный заголовок для преимущества компании</h2>
+
+				<p class="about__subtitle">О нас</p>
+
+				<p class="about__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на&nbsp;русском языке, а&nbsp;начинающему оратору отточить.</p>
+
+				<div class="slider-wrapper">
+					<ul class="about__advantages">
+						<li class="about__card">
+							Первое целевое преимущество
+						</li>
+						<li class="about__card">
+							Второе целевое преимущество
+						</li>
+						<li class="about__card">
+							Третье целевое преимущество
+						</li>
+						<li class="about__card">
+							Четвертое целевое преимущество
+						</li>
+					</ul>
+
+					<button class="prev-button" aria-label="Посмотреть предыдущий слайд">
+						<svg width="9" height="16" viewBox="0 0 9 16" fill="#000" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0.344121 7.29289C-0.0464033 7.68342 -0.046404 8.31658 0.34412 8.7071L6.70807 15.0711C7.0986 15.4616 7.73176 15.4616 8.12229 15.0711C8.51281 14.6806 8.51281 14.0474 8.12229 13.6569L2.46544 8L8.1223 2.34315C8.51283 1.95263 8.51283 1.31946 8.1223 0.928939C7.73178 0.538414 7.09861 0.538413 6.70809 0.928937L0.344121 7.29289ZM2.05469 7L1.05123 7L1.05123 9L2.05469 9L2.05469 7Z" />
+						</svg>
+					</button>
+					<button class="next-button" aria-label="Посмотреть следующий слайд">
+						<svg width="9" height="16" viewBox="0 0 9 16" fill="#000" xmlns="http://www.w3.org/2000/svg">
+							<path d="M8.65588 8.70711C9.0464 8.31658 9.0464 7.68342 8.65588 7.2929L2.29193 0.928927C1.9014 0.538403 1.26824 0.538402 0.877712 0.928926C0.487188 1.31945 0.487187 1.95261 0.877711 2.34314L6.53456 8L0.877699 13.6568C0.487174 14.0474 0.487174 14.6805 0.877697 15.0711C1.26822 15.4616 1.90139 15.4616 2.29191 15.0711L8.65588 8.70711ZM6.94531 9L7.94877 9L7.94877 7L6.94531 7L6.94531 9Z" />
+						</svg>
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="questions">
+			<div class="container">
+				<h2 class="questions__title">Остались вопросы?</h2>
+
+				<p class="questions__subtitle">Оставьте номер телефона, и мы перезвоним вам</p>
+
+				<form class="recall-form" method="post" action="https://jsonplaceholder.typicode.com/posts">
+
+					<fieldset class="recall-form__wrapper">
+						<input class="recall-form__input" type="text" name="name" placeholder="Ваше имя" required>
+
+						<input class="recall-form__input" type="tel" name="tel" placeholder="Телефон" required>
+
+						<input class="recall-form__input" type="email" name="email" placeholder="E-mail" required>
+					</fieldset>
+					<button class="button button--questions" type="submit">Позвоните мне</button>
+				</form>
+
+				<p class="questions__agreement">Я даю своё <span class="spotlight">согласие</span> на обработку моих персональных данных.</p>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__wrapper">
+				<div class="logo logo--footer">
+					<a class="logo__link" href="#!">
+						<img class="logo__img" src="./img/header/logo.png" alt="Логотип компании Logo">
+					</a>
+				</div>
+
+				<div class="copyright">© 2022 XXXcompany.<br>Все права защищены.</div>
+
+				<p class="developer">Сделано в Ситдиковым Ренатом</p>
+
+				<div class="callback">
+					<a class="callback__number" href="tel:+79625561234">+7 (962) 556 - 1234</a>
+
+					<button class="callback__recall">Перезвоните мне</button>
+				</div>
+			</div>
+
+		</div>
+		<p class="developer developer--mobile">Сделано в Ситдиковым Ренатом</p>
+	</footer>
+
+	<script src="./js/slider.js" defer></script>
+</body>
+
+</html>
